@@ -45,7 +45,7 @@ class DonkeyEnv(gym.Env):
 
         # Launch Unity environment
         file_name = "donkey" # file name to identify Unity application
-        headless = False  # Set to True to render Unity environment. False for headless training
+        headless = True  # Set to True to render Unity environment. False for headless training
         platform = "linux" # linux or darwin (for MaxOS)
         self.viewer.executable_launcher(file_name, headless, platform)
 
